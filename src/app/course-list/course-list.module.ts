@@ -9,6 +9,9 @@ import { CourseListItemComponent } from './course-list-item/course-list-item.com
   declarations: [CourseListComponent, CourseListItemComponent],
   imports: [
     CommonModule
+  ],
+  exports: [
+    CourseListComponent
   ]
 })
 export class CourseListModule { }
