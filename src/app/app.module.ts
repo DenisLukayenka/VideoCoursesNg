@@ -19,4 +19,4 @@ import { CoursesPageModule } from './courses-page/courses-page.module';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { } 
