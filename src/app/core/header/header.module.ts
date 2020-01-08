@@ -5,14 +5,15 @@ import { UserInfoComponent } from './user-info/user-info.component';
 import { LoginSignupComponent } from './login-signup/login-signup.component';
 import { HeaderComponent } from './header/header.component';
 import { SearchModule } from 'src/app/shared/search/search.module';
-
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
   declarations: [LogoComponent, UserInfoComponent, LoginSignupComponent, HeaderComponent],
   imports: [
     CommonModule,
-    SearchModule
+    SearchModule,
+    NgbModule
   ],
   exports: [
     HeaderComponent

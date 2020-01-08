@@ -10,6 +10,10 @@ export class PageComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log("page ngOnInit");
   }
 
+  ngOnChanges() {
+    console.log("page ngOnChanges");
+  }
 }

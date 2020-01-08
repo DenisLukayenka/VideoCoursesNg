@@ -1,0 +1,9 @@
+.breadcrumb-link {
+    font-size: larger;
+    text-decoration: none;
+}
+
+.breadcrumb-active {
+    font-size: larger;
+    color: inherit;
+}
