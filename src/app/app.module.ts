@@ -14,7 +14,7 @@ import { CoursesPageModule } from './courses-page/courses-page.module';
     BrowserModule,
     AppRoutingModule,
     CoreModule,
-    CoursesPageModule
+    CoursesPageModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

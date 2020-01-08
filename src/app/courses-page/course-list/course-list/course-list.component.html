@@ -1,0 +1,7 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 pr-0 pl-3" *ngFor="let item of courseList; let i = index">
+            <app-course-list-item [course]="item" [index]="i + 1" (onDelete)=deleteCourse($event)></app-course-list-item>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,65 @@
+<div class="container course">
+  <div class="d-flex align-items-end course-title">
+    <div class="course-title-lesson">
+      <span class="mb-0">
+        Lesson {{index}}.
+      </span>
+    </div>
+    <div class="course-title-theme">
+      <span class="mb-0">
+        {{course.title}}
+      </span>
+    </div>
+  </div>
+  <div class="row course-image">
+    <div class="col-md-12">
+      <a href="#">
+        <img src="assets/images/panda.jpg" class="img-fluid rounded" alt="Responsive image">
+      </a>
+    </div>
+  </div>
+  <div class="course-content">
+    <div class="row course-block">
+      <div class="col-md-4 course-content-title">
+        <span>Agenda:</span>
+      </div>
+      <div class="col-md-8 course-content-body">
+        <span>{{course.description}}</span>
+      </div>
+    </div>
+    <div class="row course-block">
+      <div class="col-md-4 course-content-title">
+        <span>Duration:</span>
+      </div>
+      <div class="col-md-8 course-content-body">
+        <span>{{course.duration}} mins</span>
+      </div>
+    </div>
+    <div class="row course-block">
+      <div class="col-md-4 course-content-title">
+        <span>Scripts:</span>
+      </div>
+      <div class="col-md-8 course-content-body">
+        <span>19 files</span>
+      </div>
+    </div>
+    <div class="row course-block">
+      <div class="col-md-4 course-content-title">
+        <span>Homework:</span>
+      </div>
+      <div class="col-md-8 course-content-body">
+        <span>9 tasks</span>
+      </div>
+    </div>
+  </div>
+  <div class="course-controls">
+    <div class="row justify-content-around">
+      <div class="col-md-6 d-flex">
+        <a class="btn edit-button flex-fill">EDIT</a>
+      </div>
+      <div class="col-md-6 d-flex">
+        <a class="btn cancel-button flex-fill" (click)="onCourseDeleted()">DELETE</a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,4 +1,5 @@
 import { ICourse } from './course.interface';
+import { Time } from '@angular/common';
 
 export class Course implements ICourse {
     id: number;    

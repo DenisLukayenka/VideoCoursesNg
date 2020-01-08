@@ -1,0 +1,82 @@
+.course {
+    background-color: #f5f6f8;
+    padding: 20px 10px 20px 10px;
+    margin-bottom: 15px;
+}
+
+.course-title {
+    margin: 0px;
+    padding: 0px;
+}
+
+.course-title-lesson {
+    color: #c6c7c9;
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+.course-title-theme{
+    color: black;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.course-image {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.course-content-title {
+    color: #6f7072;
+    font-weight: bold;
+}
+
+.course-content-body {
+    color: #737476;
+}
+
+.course-content {
+    margin-top: 14px;
+    margin-bottom: 12px;
+}
+
+.course-block {
+    margin-top: 7px;
+    margin-bottom: 4px;
+}
+
+.course-controls{
+    margin-top: 15px;
+}
+
+.edit-button {
+    border-color: #955a5c;
+    border-width: 1px;
+    border-radius: 1px;
+}
+
+.edit-button:hover {
+    border-color: #955a5c;
+    border-width: 1.5px;
+    border-radius: 1px;
+    transform: scale(1.03);
+}
+
+.cancel-button {
+    background-color: #dadada;
+    border-width: 0px;
+    border-radius: 1px;
+    color: white;
+}
+
+.cancel-button:hover {
+    background-color: #c7c7c7;
+    border-width: 0px;
+    border-radius: 1px;
+    color: white;
+    transform: scale(1.03);
+}
