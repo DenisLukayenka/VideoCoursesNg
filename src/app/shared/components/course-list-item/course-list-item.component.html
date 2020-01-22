@@ -1,15 +1,11 @@
 <div class="container course">
-  <div class="d-flex align-items-end course-title">
-    <div class="course-title-lesson">
-      <span class="mb-0">
-        Lesson {{index}}.
-      </span>
-    </div>
-    <div class="course-title-theme">
-      <span class="mb-0">
-        {{course.title}}
-      </span>
-    </div>
+  <div class="course-title">
+    <span class="course-title-lesson mb-0">
+      Lesson {{index}}.
+    </span>
+    <span class="course-title-theme mb-0">
+      {{course.title}}
+    </span>
   </div>
   <div class="row course-image">
     <div class="col-md-12">
@@ -55,7 +51,7 @@
   <div class="course-controls">
     <div class="row justify-content-around">
       <div class="col-md-6 d-flex">
-        <a class="btn edit-button flex-fill">EDIT</a>
+        <a class="btn edit-button flex-fill" (click)='onCourseEdit()'>EDIT</a>
       </div>
       <div class="col-md-6 d-flex">
         <a class="btn cancel-button flex-fill" (click)="onCourseDeleted()">DELETE</a>

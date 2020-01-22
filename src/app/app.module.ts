@@ -4,17 +4,19 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
-import { CoursesPageModule } from './courses-page/courses-page.module';
+import { CoursesPageComponent } from './components/courses-page/courses-page.component';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CoursesPageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CoreModule,
-    CoursesPageModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

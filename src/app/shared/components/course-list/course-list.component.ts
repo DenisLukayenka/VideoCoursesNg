@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ICourse } from '../course.interface';
-import { CourseListService } from '../course-list.service';
+import { ICourse } from '../../models/course.interface';
+import { CourseListService } from '../../services/course-list.service';
 
 @Component({
   selector: 'app-course-list',
@@ -20,6 +20,10 @@ export class CourseListComponent implements OnInit {
 
   deleteCourse(courseId){
     console.log('deleted course with id=' + courseId);
+  }
+
+  editCourse(courseId){
+    console.log("edit course with id = " + courseId);
   }
 
   ngOnChanges() {

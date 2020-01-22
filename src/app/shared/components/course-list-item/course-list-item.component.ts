@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { ICourse } from '../course.interface';
+import { ICourse } from '../../models/course.interface';
 
 @Component({
   selector: 'app-course-list-item',
@@ -12,6 +12,7 @@ export class CourseListItemComponent implements OnInit {
   @Input("index") index: number;
 
   @Output() onDelete = new EventEmitter();
+  @Output() onEdit = new EventEmitter();
 
   constructor() { }
 
@@ -25,5 +26,9 @@ export class CourseListItemComponent implements OnInit {
 
   onCourseDeleted() {
     this.onDelete.emit(this.course.id);
+  }
+
+  onCourseEdit() {
+    this.onEdit.emit(this.course.id);
   }
 }

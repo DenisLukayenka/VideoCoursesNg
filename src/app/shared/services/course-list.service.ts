@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
-import { ICourse } from './course.interface';
-import { Course } from './course.model';
-import { Time } from '@angular/common';
+import { ICourse } from '../models/course.interface';
+import { Course } from '../models/course.model';
 
 @Injectable({
   providedIn: 'root'
@@ -18,7 +17,7 @@ export class CourseListService {
     new Course(7, "Custom component", new Date(1995, 11, 18), 77, "Entries and outputs; Multiple budles; Loaders; Plugins; Production configuration.")
   ]
 
-  constructor() { }
+  constructor() { } 
 
   getCourseList() {
     return this.courseList;
