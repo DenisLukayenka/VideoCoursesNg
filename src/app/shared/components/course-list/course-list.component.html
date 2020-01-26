@@ -1,10 +1,16 @@
 <div class="list-container">
-    <div class="course-item px-0" *ngFor="let item of courseList; let i = index">
-        <app-course-list-item 
-            [course]="item" 
-            [index]="i + 1" 
-
-            (onDelete)='deleteCourse($event)'
-            (onEdit)='editCourse($event)'></app-course-list-item>
+    <div *ngIf="courseList.length === 0; else showItems" class="no-data-msg">
+        <h3>No data. Feel free to add new course</h3>
     </div>
+
+    <ng-template #showItems>
+        <div class="course-item px-0" *ngFor="let item of courseList; let i = index">
+            <app-course-list-item 
+                [course]="item" 
+                [index]="i + 1" 
+    
+                (onDelete)='deleteCourse($event)'
+                (onEdit)='editCourse($event)'></app-course-list-item>
+        </div>
+    </ng-template>
 </div>

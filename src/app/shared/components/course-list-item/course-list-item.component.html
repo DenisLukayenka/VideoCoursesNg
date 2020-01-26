@@ -1,4 +1,4 @@
-<div class="course">
+<div class="course" [appDateRelevant]='course.creationDate'>
   <div>
     <div class="course-title">
       <span class="course-title-lesson mb-0">
@@ -10,7 +10,7 @@
     </div>
 
     <div class="course-date">
-      <small class="text-muted">{{ course.creationDate | date: 'short' }}</small>
+      <small class="text-muted">{{ course.creationDate | date }}</small>
     </div>
   
     <div class="course-image">

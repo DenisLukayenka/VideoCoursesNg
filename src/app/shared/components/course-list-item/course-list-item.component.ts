@@ -1,10 +1,12 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { ICourse } from '../../models/course.interface';
+import { DateRelevantDirective } from '../../directives/date-relevant.directive';
 
 @Component({
   selector: 'app-course-list-item',
   templateUrl: './course-list-item.component.html',
-  styleUrls: ['./course-list-item.component.css']
+  styleUrls: ['./course-list-item.component.css'],
+  providers: [ DateRelevantDirective ]
 })
 export class CourseListItemComponent implements OnInit {
 
