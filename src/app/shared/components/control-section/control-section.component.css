@@ -4,3 +4,9 @@
     color: #ffffff;
     padding: 10px 25px 10px 25px;
 }
+
+.add-lesson-button:hover {
+    background-color: #ec5f63;
+    border-radius: 1px;
+    transform: scale(1.04);
+}
