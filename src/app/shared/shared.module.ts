@@ -6,6 +6,7 @@ import { CourseListComponent } from './components/course-list/course-list.compon
 import { CourseListItemComponent } from './components/course-list-item/course-list-item.component';
 import { SearchComponent } from './components/search/search.component';
 import { DateRelevantDirective } from './directives/date-relevant.directive';
+import { TimePipe } from './pipes/time.pipe';
 
 
 
@@ -16,7 +17,8 @@ import { DateRelevantDirective } from './directives/date-relevant.directive';
     CourseListComponent,
     CourseListItemComponent,
     SearchComponent,
-    DateRelevantDirective
+    DateRelevantDirective,
+    TimePipe
   ],
   imports: [
     CommonModule
