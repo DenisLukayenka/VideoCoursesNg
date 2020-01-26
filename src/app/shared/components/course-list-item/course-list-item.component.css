@@ -26,10 +26,24 @@
     font-size: 1.2em;
     font-weight: bold;
 }
+.course-date {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0;
+}
 
 .course-image {
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.course-content {
+    margin-top: 14px;
+    margin-bottom: 12px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1vw;
 }
 
 .course-content-title {
@@ -39,16 +53,6 @@
 
 .course-content-body {
     color: #737476;
-}
-
-.course-content {
-    margin-top: 14px;
-    margin-bottom: 12px;
-}
-
-.course-block {
-    margin-top: 7px;
-    margin-bottom: 4px;
 }
 
 .course-controls{
