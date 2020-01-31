@@ -11,9 +11,18 @@
     border-color: transparent;
 }
 
+.course:hover {
+    transform: scale(1.01);
+}
+
 .course-title {
     margin: 0px;
     padding: 0px;
+
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
 .course-title-lesson {
@@ -21,6 +30,7 @@
     margin: 0px;
     padding: 0px;
     font-size: 1em;
+    white-space: nowrap;
 }
 
 .course-title-theme{
@@ -96,4 +106,14 @@
     border-radius: 1px;
     color: white;
     transform: scale(1.03);
+}
+
+.star-icon {
+    color: coral;
+    margin-left: 10px;
+}
+
+.star-course {
+    background-color: rgb(254, 255, 244);
+    border-color: rgb(228, 233, 180);
 }

@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { ICourse } from '../../models/course.interface';
-import { DateRelevantDirective } from '../../directives/date-relevant.directive';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-course-list-item',
@@ -8,6 +8,8 @@ import { DateRelevantDirective } from '../../directives/date-relevant.directive'
   styleUrls: ['./course-list-item.component.css']
 })
 export class CourseListItemComponent implements OnInit {
+
+  starIcon = faStar;
 
   @Input("course") course: ICourse;
   @Input("index") index: number;

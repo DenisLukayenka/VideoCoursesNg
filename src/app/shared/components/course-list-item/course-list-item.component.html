@@ -1,4 +1,4 @@
-<div class="course" [appDateRelevant]='course.creationDate'>
+<div class="course" [appDateRelevant]='course.creationDate' [ngClass]='{ "star-course": course.isTopRated }'>
   <div>
     <div class="course-title">
       <span class="course-title-lesson mb-0">
@@ -7,6 +7,7 @@
       <span class="course-title-theme mb-0">
         {{course.title | uppercase}}
       </span>
+      <fa-icon *ngIf='course.isTopRated' [icon]='starIcon' [ngClass]="['star-icon']"></fa-icon>
     </div>
 
     <div class="course-date">

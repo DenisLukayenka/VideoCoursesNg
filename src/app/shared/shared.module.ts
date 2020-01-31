@@ -5,9 +5,10 @@ import { ControlSectionComponent } from './components/control-section/control-se
 import { CourseListComponent } from './components/course-list/course-list.component';
 import { CourseListItemComponent } from './components/course-list-item/course-list-item.component';
 import { SearchComponent } from './components/search/search.component';
-import { DateRelevantDirective } from './directives/date-relevant.directive';
+import { DateRelevantDirective } from './directives/date/date-relevant.directive';
 import { TimePipe } from './pipes/time.pipe';
-
+import { StarRateDirective } from './directives/star-rate/star-rate.directive';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 @NgModule({
@@ -18,10 +19,12 @@ import { TimePipe } from './pipes/time.pipe';
     CourseListItemComponent,
     SearchComponent,
     DateRelevantDirective,
-    TimePipe
+    TimePipe,
+    StarRateDirective,
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FontAwesomeModule,
   ],
   exports: [
     BreadcrumbComponent,

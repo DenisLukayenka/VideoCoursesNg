@@ -6,17 +6,19 @@ import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { CoursesPageComponent } from './components/courses-page/courses-page.component';
 import { SharedModule } from './shared/shared.module';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CoursesPageComponent
+    CoursesPageComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CoreModule,
-    SharedModule
+    SharedModule,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
