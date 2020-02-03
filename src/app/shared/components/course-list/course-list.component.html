@@ -4,7 +4,7 @@
     </div>
 
     <ng-template #showItems>
-        <div class="course-item px-0" *ngFor="let item of courseList; let i = index">
+        <div class="course-item px-0" *ngFor="let item of courseList | orderBy: 'creationDate'; let i = index">
             <app-course-list-item 
                 [course]="item" 
                 [index]="i + 1" 

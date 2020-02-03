@@ -6,9 +6,9 @@ import { CourseListComponent } from './components/course-list/course-list.compon
 import { CourseListItemComponent } from './components/course-list-item/course-list-item.component';
 import { SearchComponent } from './components/search/search.component';
 import { DateRelevantDirective } from './directives/date/date-relevant.directive';
-import { TimePipe } from './pipes/time.pipe';
-import { StarRateDirective } from './directives/star-rate/star-rate.directive';
+import { TimePipe } from './pipes/time/time.pipe';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { OrderByPipe } from './pipes/orderBy/orderBy.pipe';
 
 
 @NgModule({
@@ -20,7 +20,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     SearchComponent,
     DateRelevantDirective,
     TimePipe,
-    StarRateDirective,
+    OrderByPipe,
   ],
   imports: [
     CommonModule,
