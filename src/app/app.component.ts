@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'VideoCoursesNg';
+
+  searchQuery: string;
+
+  onSearchQuery(query: string) {
+    this.searchQuery = query;
+  }
 }

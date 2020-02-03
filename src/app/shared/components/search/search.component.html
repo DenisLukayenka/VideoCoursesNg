@@ -1,4 +1,13 @@
 <form class="form-inline">
-    <input class="form-control mr-2 search-input" type="text" placeholder="Search" aria-label="Search"/>
+    <input
+        name="searchQuery"
+        [ngModel]="searchQuery"
+        (ngModelChange)="inputQuery($event)"
+
+        class="form-control mr-2 search-input" 
+        type="text" 
+        placeholder="Search" 
+        aria-label="Search"/>
+
     <button class="btn btn-outline-success" type="submit">Search</button>
 </form>

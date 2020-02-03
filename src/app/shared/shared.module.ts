@@ -9,7 +9,7 @@ import { DateRelevantDirective } from './directives/date/date-relevant.directive
 import { TimePipe } from './pipes/time/time.pipe';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { OrderByPipe } from './pipes/orderBy/orderBy.pipe';
-
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,6 +25,7 @@ import { OrderByPipe } from './pipes/orderBy/orderBy.pipe';
   imports: [
     CommonModule,
     FontAwesomeModule,
+    FormsModule,
   ],
   exports: [
     BreadcrumbComponent,

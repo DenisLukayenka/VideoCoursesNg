@@ -1,4 +1,4 @@
-<app-header></app-header>
+<app-header (onSearchQueryChange)='onSearchQuery($event)'></app-header>
 <app-breadcrumb></app-breadcrumb>
 <div class="container">
     <router-outlet></router-outlet>

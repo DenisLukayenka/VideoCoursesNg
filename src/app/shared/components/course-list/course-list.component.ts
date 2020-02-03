@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { ICourse } from '../../models/course.interface';
 import { CourseListService } from '../../services/course-list.service';
 
@@ -10,6 +10,9 @@ import { CourseListService } from '../../services/course-list.service';
 export class CourseListComponent implements OnInit {
 
   courseList: ICourse[] = [];
+
+  @Input()
+  searchQuery: string;
 
   constructor(private courseListService: CourseListService) { }
 

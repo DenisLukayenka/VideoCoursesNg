@@ -4,7 +4,7 @@
         
         <div class="navbar-nav ml-auto">
             <div class="mr-2">
-                <app-search></app-search>
+                <app-search (onSearchChange)='onSearch($event)'></app-search>
             </div>
             <div class="ml-2">
                 <app-user-info></app-user-info>
